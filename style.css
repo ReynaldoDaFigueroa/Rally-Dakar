@@ -65,6 +65,8 @@ body{
      .hero-content{
         max-width: 800px;
         color:var(-text-light);
+        position: relative;
+        top: -130px;
      }
 
      .badge-rally{
