@@ -54,6 +54,9 @@ body{
         transition: color 0.3s;
 
     }
+    .nav-links li{
+        margin-left: 25px;
+    }
      .hero-section{
         height: 85vh;
         background: linear-gradient(to top, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.2)),url(img/logo\ dakar.jfif) no-repeat center center/cover;
@@ -95,24 +98,36 @@ body{
     .container{
         max-width: 1100px;
         margin: 20px auto;
+        
         padding: 0 20px;
 
     }
-    .content-row{
+    .content-row, .row-reverse {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin-bottom: 90px;
-        gap: 40px;
+        justify-content: center;
+        margin-bottom: 80px;
+        gap: 14px;
+
+
+        
+        
     }
     .row-reverse{
         flex-direction: row-reverse;
+        
 
     }
     .tex-col{
         flex: 1;
         width: 100%;
         margin-bottom: 30px;
+    }
+    .tex-col p, .tex-col li{
+        line-height: 1.6;
+    }
+    .tex-col li{
+        margin-bottom: 12px;
     }
     .tex-col h2{
         font-size: 2rem;
@@ -201,6 +216,10 @@ body{
     height: 200px;
     object-fit: cover;
     display: block;
+    transition: 0.3s ease;
+}
+.timeline-col:hover .timeline-img{
+    transform: scale(1.05);
 }
 
 .timeline-text {
@@ -283,8 +302,10 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    
     width: 100%;
+    
+    
+    
 }
 /*---- caja individual para cada imagen ----*/
 .curiosidades-img-box{
@@ -293,7 +314,10 @@ body{
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+
 }
+
 /*---- imagen interna ----*/
 .curiosidades-img-box img{
     width: 100%;
@@ -301,6 +325,9 @@ body{
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
+}
+.curiosidades-img-box:hover{
+  transform: scale(1.05);
 }
 /*---- footer ----*/
 .main-footer{
@@ -436,6 +463,18 @@ body{
     .imagen-col img{
         max-width: 100%;
         height: auto;
+    }
+    #categorias, #curiosidades {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .tex-col {
+        margin-bottom: 15px !important;
+
+    }
+    .imagen-col{
+        margin-top: 0px !important;
+        margin-bottom: 15px !important;
     }
 
     
